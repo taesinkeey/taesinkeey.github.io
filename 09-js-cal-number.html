@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-js-cal-number.html</title>
+    <script>
+        function sum_number1(){
+            document.getElementById("output").innerHTML = 
+            parseInt(document.getElementById("num1").value) + 
+            parseInt(document.getElementById("num2").value)
+        }
+        function sum_number2(){
+            document.getElementById("output").innerHTML = 
+            document.getElementById("num1").value -
+            document.getElementById("num2").value
+        }
+        function sum_number3(){
+            document.getElementById("output").innerHTML = 
+            document.getElementById("num1").value *
+            document.getElementById("num2").value
+        }
+        function sum_number4(){
+            document.getElementById("output").innerHTML = 
+            document.getElementById("num1").value /
+            document.getElementById("num2").value
+        }
+    </script>
+</head>
+<body>
+    Nmu1 : <input type="text" name="" id="num1">
+    <br>
+    <br>
+    Nmu1 : <input type="text" name="" id="num2">    
+    <br>
+    <br>
+    <button onclick="sum_number1()"> + </button>
+    <button onclick="sum_number2()"> - </button>
+    <br>
+    <br>
+    <button onclick="sum_number3()"> * </button>
+    <button onclick="sum_number4()"> / </button>
+    <br>
+    <br>
+    Ans : <span id="output"></span>
+</body>
+</html>
